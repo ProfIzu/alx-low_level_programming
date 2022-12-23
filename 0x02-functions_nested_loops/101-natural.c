@@ -1,26 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - list all natural numbers multiples of 3 & 5
- *
- * Return: Always 0.
+ * main - Prints the sum of all multiples of 3 or 5 up to 102
+ * Return: Always (Success)
  */
-
 int main(void)
 {
-	int num, sum;
+	int i, z = 0;
 
-	sum = 0;
-
-	for (num = 0; num < 1024; num++)
+	while (i < 1024)
 	{
-		if (num % 3 == 0 || num % 5 == 0)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			sum += num;
+			z += i;
 		}
+
+		i++;
 	}
 
-	printf("%d\n", sum);
-
+	printf("%d\n", z);
 	return (0);
 }

@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _abs - computes the absolute value of an integer
+ * _abs - Entry point
  * @n: n is an integer
- *
- * Return: integer
+ * Description: prints the absolute value of an integer
+ * Return: int
  */
 
 int _abs(int n)
